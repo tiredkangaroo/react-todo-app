@@ -28,8 +28,9 @@ function App(){
             <br/>
             <form method="post" action="/new">
                 <input type="hidden" name="author" value="ajiteshkumar" />
-                <input required autoFocus ref={newTodoRef} name="todo" type="text" />
-                <button type="submit">Create Todo</button>
+                    <textarea cols="50" rows="10" required autoFocus ref={newTodoRef} name="todo" type="text" /><br/>
+                    <button type="submit">Create Todo</button>
+
             </form>
         </div>
     )

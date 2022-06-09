@@ -57,7 +57,8 @@ function App() {
             "form",
             { method: "post", action: "/new" },
             React.createElement("input", { type: "hidden", name: "author", value: "ajiteshkumar" }),
-            React.createElement("input", { required: true, autoFocus: true, ref: newTodoRef, name: "todo", type: "text" }),
+            React.createElement("textarea", { cols: "50", rows: "10", required: true, autoFocus: true, ref: newTodoRef, name: "todo", type: "text" }),
+            React.createElement("br", null),
             React.createElement(
                 "button",
                 { type: "submit" },

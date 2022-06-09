@@ -6,6 +6,7 @@
   </head>
   <body>
     <form action="/edit/{{ document['_id'] }}" method="POST">
+      <!-- <textarea name="text" id="text" cols="30" rows="10"></textarea> -->
       <input type="text" name="text" id="text" value="{{ document['todo'] }}"/>
       <button type="submit">Edit</button>
     </form>
