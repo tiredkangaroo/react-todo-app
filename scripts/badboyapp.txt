@@ -1,0 +1,14 @@
+const e = React.createElement;
+class Messages extends React.Component {
+    constructor(props) {
+        super(props);
+        const [messages, setMessage] = React.useState(window.messages)
+    }
+    render(){
+        return this.state["messages"].map(ele => <li key={ele.id}>{ele.message}</li> )
+    }
+}
+
+const domContainer = document.getElementById('website');
+const root = ReactDOM.createRoot(domContainer);
+root.render(<Messages />);
